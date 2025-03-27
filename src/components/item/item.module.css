@@ -1,0 +1,53 @@
+.description {
+  margin: 0 0 15px 0;
+  color: #34495e;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.editBtn,
+.deleteBtn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.editBtn {
+  background-color: #3498db;
+  color: white;
+}
+
+.editBtn:hover {
+  background-color: #2980b9;
+}
+
+.deleteBtn {
+  background-color: #e86456;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #c0493c;
+}
+
+@media (max-width: 480px) {
+  .btns {
+    flex-direction: column;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    width: 100%;
+  }
+}

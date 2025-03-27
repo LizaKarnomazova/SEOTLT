@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.input.error {
+  border-color: #e74c3c;
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: -10px;
+}
+
+.addBtn,
+.confirmBtn {
+  align-self: flex-start;
+  background-color: #0e3963;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addBtn {
+  align-self: flex-end;
+}
+
+.addBtn:hover,
+.confirmBtn:hover {
+  background-color: #104274;
+}
+
+.confirmBtn {
+  background-color: #3498db;
+}
+
+.confirmBtn:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 480px) {
+  .input {
+    padding: 10px 12px;
+  }
+
+  .addBtn,
+  .confirmBtn {
+    width: 100%;
+    align-self: stretch;
+  }
+}
